@@ -40,7 +40,10 @@ export default (editor, opt = {}) => {
     class: clsCell,
     'data-gjs-draggable': `.${clsRow}`,
     'data-gjs-resizable': resizerRight,
-    'data-gjs-custom-name': labelCell
+    'data-gjs-custom-name': labelCell,
+    // X Flex
+    'data-gjs-unstylable': ['width'],
+    'data-gjs-stylable-require': ['flex-basis'],
   };
 
   const privateCls = [`.${clsRow}`, `.${clsCell}`];
@@ -75,7 +78,7 @@ export default (editor, opt = {}) => {
   bm.add('flexbox', { ...{
     label,
     category,
-    attributes: { class: 'gjs-fonts gjs-f-b1' },
+    attributes: { class: 'gjs-fonts gjs-f-b2' },
     content: `
         <div ${attrsRow}>
           <div ${attrsCell}></div>

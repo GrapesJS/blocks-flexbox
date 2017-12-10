@@ -29,16 +29,39 @@
         height: '100%',
         showOffsets: 1,
         noticeOnUnload: 0,
+        avoidInlineStyle: 1,
         storageManager: { autoload: 0 },
         container: '#gjs',
         fromElement: true,
+        styleManager: {
+          sectors: [{
+              name: 'General',
+              open: false,
+              buildProps: ['float', 'display', 'position', 'top', 'right', 'left', 'bottom']
+            },{
+              name: 'Dimension',
+              open: false,
+              buildProps: ['width', 'flex-width', 'height', 'max-width', 'min-height', 'margin', 'padding'],
+              properties: [{
+                id: 'flex-width',
+                type: 'integer',
+                name: 'Width',
+                units: ['px', '%'],
+                property: 'flex-basis',
+                toRequire: 1,
+              }]
+          },{
+            name: 'Decorations',
+            open: false,
+            buildProps: ['border-radius-c', 'background-color', 'border-radius', 'border', 'box-shadow', 'background'],
+          }]
+        },
 
         plugins: ['gjs-blocks-flexbox'],
         pluginsOpts: {
           'gjs-blocks-flexbox': {}
         }
       });
-      window.editor = editor;
     </script>
   </body>
 </html>
