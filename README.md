@@ -2,6 +2,7 @@
 
 This plugin adds the Flexbox block which allows creating easily flexible and responsive columns
 
+[Demo](https://codepen.io/artf/full/qpWBRW/)
 
 
 ## Summary
