@@ -1,8 +1,8 @@
 {
-  "name": "grapesjs-block-flexbox",
+  "name": "grapesjs-blocks-flexbox",
   "version": "0.1.0",
-  "description": "Add flexbox block",
-  "main": "dist/grapesjs-block-flexbox.min.js",
+  "description": "Add the flexbox block",
+  "main": "dist/grapesjs-blocks-flexbox.min.js",
   "scripts": {
     "lint": "eslint src",
     "v:patch": "npm version --no-git-tag-version patch",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/artf/grapesjs-block-flexbox.git"
+    "url": "https://github.com/artf/grapesjs-blocks-flexbox.git"
   },
   "keywords": [
     "grapesjs",
@@ -38,7 +38,6 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
-    "cross-env": "^5.1.1",
     "eslint": "^4.1.1",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"

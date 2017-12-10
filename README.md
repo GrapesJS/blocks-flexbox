@@ -1,12 +1,12 @@
-# GrapesJS Block Flexbox
+# GrapesJS Blocks Flexbox
 
-This plugin adds the Flexbox block which allows creating easily flex grid systems
+This plugin adds the Flexbox block which allows creating easily flexible and responsive columns
 
 
 
 ## Summary
 
-* Plugin name: `gjs-block-flexbox`
+* Plugin name: `gjs-blocks-flexbox`
 * Blocks
   * `flexbox`
 
@@ -27,11 +27,11 @@ This plugin adds the Flexbox block which allows creating easily flex grid system
 ## Download
 
 * CDN
-  * `https://unpkg.com/grapesjs-block-flexbox`
+  * `https://unpkg.com/grapesjs-blocks-flexbox`
 * NPM
-  * `npm i grapesjs-block-flexbox`
+  * `npm i grapesjs-blocks-flexbox`
 * GIT
-  * `git clone https://github.com/artf/grapesjs-block-flexbox.git`
+  * `git clone https://github.com/artf/grapesjs-blocks-flexbox.git`
 
 
 
@@ -42,7 +42,7 @@ This plugin adds the Flexbox block which allows creating easily flex grid system
 ```html
 <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
 <script src="https://unpkg.com/grapesjs"></script>
-<script src="path/to/grapesjs-block-flexbox.min.js"></script>
+<script src="path/to/grapesjs-blocks-flexbox.min.js"></script>
 
 <div id="gjs"></div>
 
@@ -50,9 +50,9 @@ This plugin adds the Flexbox block which allows creating easily flex grid system
   var editor = grapesjs.init({
       container : '#gjs',
       ...
-      plugins: ['gjs-block-flexbox'],
+      plugins: ['gjs-blocks-flexbox'],
       pluginsOpts: {
-        'gjs-block-flexbox': {
+        'gjs-blocks-flexbox': {
           // options
         }
       }
@@ -69,8 +69,8 @@ This plugin adds the Flexbox block which allows creating easily flex grid system
 Clone the repository
 
 ```sh
-$ git clone https://github.com/artf/grapesjs-block-flexbox.git
-$ cd grapesjs-block-flexbox
+$ git clone https://github.com/artf/grapesjs-blocks-flexbox.git
+$ cd grapesjs-blocks-flexbox
 ```
 
 Install dependencies

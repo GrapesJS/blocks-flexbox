@@ -1,25 +1,26 @@
 import grapesjs from 'grapesjs';
-import loadComponents from './components';
 import loadBlocks from './blocks';
 
-export default grapesjs.plugins.add('gjs-block-flexbox', (editor, opts = {}) => {
-  let config = opts;
-
+export default grapesjs.plugins.add('gjs-blocks-flexbox', (editor, config = {}) => {
+  // Default options
   let defaults = {
-    // default options
+    // Use this to extend the default flexbox block
+    flexboxBlock: {},
+
+    // Classes prefix
+    stylePrefix: '',
+
+    // Row label
+    labelRow: 'Row',
+
+    // Column label
+    labelColumn: 'Column',
   };
 
-  // Load defaults
-  for (let name in defaults) {
-    if (!(name in config))
-      config[name] = defaults[name];
-  }
-
-  // Add components
-  loadComponents(editor, config);
+  const opts = { ...config, ...defaults };
 
   // Add blocks
-  loadBlocks(editor, config);
+  loadBlocks(editor, opts);
 
   // TODO Remove
   editor.on('load', () => editor.addComponents(`<div style="margin:0 100px; padding:25px;">Content loaded from the plugin</div>`))
