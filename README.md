@@ -18,7 +18,10 @@ This plugin adds the Flexbox block which allows creating easily flexible and res
 
 |Option|Description|Default|
 |-|-|-
-|`option1`|Description option|`default value`|
+|`stylePrefix`|Classes prefix|`''`|
+|`flexboxBlock`|Use this to extend the default flexbox block|`{}`|
+|`labelRow`|Row label|`Row`|
+|`labelColumn`|Column label|`Column`|
 
 
 
