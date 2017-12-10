@@ -21,7 +21,4 @@ export default grapesjs.plugins.add('gjs-blocks-flexbox', (editor, config = {}) 
 
   // Add blocks
   loadBlocks(editor, opts);
-
-  // TODO Remove
-  editor.on('load', () => editor.addComponents(`<div style="margin:0 100px; padding:25px;">Content loaded from the plugin</div>`))
 });
