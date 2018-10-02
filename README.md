@@ -10,6 +10,7 @@ This plugin adds the Flexbox block which allows creating easily flexible and res
 * Plugin name: `gjs-blocks-flexbox`
 * Blocks
   * `flexbox`
+  * `flexbox-column`
 
 
 
@@ -21,6 +22,7 @@ This plugin adds the Flexbox block which allows creating easily flexible and res
 |-|-|-
 |`stylePrefix`|Classes prefix|`''`|
 |`flexboxBlock`|Use this to extend the default flexbox block|`{}`|
+|`flexboxColumnBlock`|Use this to extend the default flexbox column block|`{}`|
 |`labelRow`|Row label|`Row`|
 |`labelColumn`|Column label|`Column`|
 

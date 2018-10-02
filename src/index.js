@@ -6,6 +6,9 @@ export default grapesjs.plugins.add('gjs-blocks-flexbox', (editor, config = {}) 
   let defaults = {
     // Use this to extend the default flexbox block
     flexboxBlock: {},
+    
+    // Use this to extend the default flexbox-column block
+    flexboxColumnBlock: {},
 
     // Classes prefix
     stylePrefix: '',

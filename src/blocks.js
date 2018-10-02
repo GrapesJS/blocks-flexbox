@@ -78,16 +78,24 @@ export default (editor, opt = {}) => {
   bm.add('flexbox', { ...{
     label,
     category,
-    attributes: { class: 'gjs-fonts gjs-f-b2' },
+    attributes: { class: 'gjs-fonts gjs-f-b1' },
     content: `
         <div ${attrsRow}>
-          <div ${attrsCell}></div>
           <div ${attrsCell}></div>
         </div>
         <style>
           ${styleRow}
           ${styleClm}
         </style>
-        `,
-  }, ...opt.flexboxBlock});
+        `
+  },
+  ...opt.flexboxBlock});
+
+  bm.add('flexbox-column', { ...{
+    label: 'Flexbox column',
+    attributes: { class: 'gjs-fonts gjs-f-b2' },
+    category,
+    content: `<div ${attrsCell}></div>`
+  },
+  ...opt.flexboxColumnBlock});
 }
