@@ -15,6 +15,12 @@ export default grapesjs.plugins.add('gjs-blocks-flexbox', (editor, config = {}) 
 
     // Column label
     labelColumn: 'Column',
+
+    // Category
+    category: 'Basic',
+
+    // Label
+    label: 'Flexbox'
   };
 
   const opts = { ...config, ...defaults };
