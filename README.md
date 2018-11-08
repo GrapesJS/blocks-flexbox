@@ -23,6 +23,8 @@ This plugin adds the Flexbox block which allows creating easily flexible and res
 |`flexboxBlock`|Use this to extend the default flexbox block|`{}`|
 |`labelRow`|Row label|`Row`|
 |`labelColumn`|Column label|`Column`|
+|`category`|Default category|`Basic`|
+|`label`|Default label|`Flexbox`|
 
 
 
