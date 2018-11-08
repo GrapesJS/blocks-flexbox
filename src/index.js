@@ -23,7 +23,7 @@ export default grapesjs.plugins.add('gjs-blocks-flexbox', (editor, config = {}) 
     label: 'Flexbox'
   };
 
-  const opts = { ...config, ...defaults };
+  const opts = Object.assign(defaults, config);
 
   // Add blocks
   loadBlocks(editor, opts);
