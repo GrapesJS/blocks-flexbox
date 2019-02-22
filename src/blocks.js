@@ -50,8 +50,8 @@ export default (editor, opt = {}) => {
   editor.on('selector:add', selector =>
     privateCls.indexOf(selector.getFullName()) >= 0 && selector.set('private', 1))
 
-  const label = 'Flexbox';
-  const category = 'Basic';
+  const label = opt.labelText;
+  const category = opt.category;
   const attrsRow = attrsToString(rowAttr);
   const attrsCell = attrsToString(colAttr);
   const styleRow = `
