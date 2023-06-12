@@ -7,7 +7,7 @@ This plugin adds the Flexbox block which allows creating easily flexible and res
 
 ## Summary
 
-* Plugin name: `gjs-blocks-flexbox`
+* Plugin name: `grapesjs-blocks-flexbox`
 * Blocks
   * `flexbox`
 
@@ -35,7 +35,7 @@ This plugin adds the Flexbox block which allows creating easily flexible and res
 * NPM
   * `npm i grapesjs-blocks-flexbox`
 * GIT
-  * `git clone https://github.com/artf/grapesjs-blocks-flexbox.git`
+  * `git clone https://github.com/GrapesJS/blocks-flexbox.git`
 
 
 
@@ -54,9 +54,9 @@ This plugin adds the Flexbox block which allows creating easily flexible and res
   var editor = grapesjs.init({
       container : '#gjs',
       ...
-      plugins: ['gjs-blocks-flexbox'],
+      plugins: ['grapesjs-blocks-flexbox'],
       pluginsOpts: {
-        'gjs-blocks-flexbox': {
+        'grapesjs-blocks-flexbox': {
           // options
         }
       }
@@ -73,20 +73,14 @@ This plugin adds the Flexbox block which allows creating easily flexible and res
 Clone the repository
 
 ```sh
-$ git clone https://github.com/artf/grapesjs-blocks-flexbox.git
-$ cd grapesjs-blocks-flexbox
+$ git clone https://github.com/GrapesJS/blocks-flexbox.git
+$ cd blocks-flexbox
 ```
 
 Install dependencies
 
 ```sh
 $ npm i
-```
-
-The plugin relies on GrapesJS via `peerDependencies` so you have to install it manually (without adding it to package.json)
-
-```sh
-$ npm i grapesjs --no-save
 ```
 
 Start the dev server
