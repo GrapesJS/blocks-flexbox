@@ -27,10 +27,8 @@ export interface PluginOptions {
   labelColumn?: string;
 };
 
-export type RequiredPluginOptions = Required<PluginOptions>;
-
 const plugin: Plugin<PluginOptions> = (editor, opts = {}) => {
-  const options: RequiredPluginOptions = {
+  const options: Required<PluginOptions> = {
     flexboxBlock: {},
     stylePrefix: '',
     labelRow: 'Row',

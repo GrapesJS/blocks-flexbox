@@ -1,14 +1,15 @@
-export default (editor, opt = {}) => {
+import type { Editor } from 'grapesjs';
+import { PluginOptions } from '.';
+
+export default (editor: Editor, opt: PluginOptions = {}) => {
   const bm = editor.BlockManager;
-  const blocks = opt.blocks || [];
   const stylePrefix = opt.stylePrefix;
-  const toAdd = name => blocks.indexOf(name) >= 0;
-  const nameClm1 = 'flexbox';
   const clsRow = `${stylePrefix}row`;
   const clsCell = `${stylePrefix}cell`;
   const labelRow = opt.labelRow;
   const labelCell = opt.labelColumn;
-  const attrsToString = attrs => {
+
+  const attrsToString = (attrs: Record<string, any>) => {
     const result = [];
 
     for (let key in attrs) {
@@ -75,7 +76,7 @@ export default (editor, opt = {}) => {
       flex-basis: 100%;
     }`;
 
-  bm.add('flexbox', { ...{
+  bm.add('flexbox', {
     label,
     category,
     attributes: { class: 'gjs-fonts gjs-f-b2' },
@@ -89,5 +90,6 @@ export default (editor, opt = {}) => {
           ${styleClm}
         </style>
         `,
-  }, ...opt.flexboxBlock});
+    ...opt.flexboxBlock
+  });
 }
