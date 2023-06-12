@@ -1,9 +1,11 @@
 {
   "name": "grapesjs-blocks-flexbox",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "description": "Add the flexbox block",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "grapesjs-cli build",
     "start": "grapesjs-cli serve"
